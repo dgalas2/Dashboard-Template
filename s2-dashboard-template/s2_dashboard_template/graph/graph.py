@@ -1,6 +1,8 @@
 import random
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
+from dotenv import load_dotenv
+load_dotenv()
 
 def getFigure():
 	start_date = datetime(2023, 1, 1)

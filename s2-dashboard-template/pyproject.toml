@@ -3,7 +3,7 @@
   requires = ["poetry-core"]
 
 [project]
-  dependencies = ["singlestoredb (>=1.11.0,<2.0.0)"]
+  dependencies = ["singlestoredb (>=1.11.0,<2.0.0)","python-dotenv (>=1.0.1,<2.0.0)"]
   description = ""
   name = "s2-dashboard-template"
   readme = "README.md"

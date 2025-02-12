@@ -1,0 +1,14 @@
+{
+	"project_name":"s2-dashboard-template",
+    "author":"S2DefaultAuthorName",
+	"version":"1.0.0",
+	"python_version":"^3.11",
+	"requirements":"./requirements.txt",
+	"entry_point":"./s2-dashboard-template/s2_dashboard_template/__init__.py",
+	"env":"./s2-dashboard-template/.env",
+	"app":"dashboard",
+	"readme":"./s2-dashboard-template/README.md",
+	"poetryFile":"./s2-dashboard-template/pyproject.toml",
+	"test":"./s2-dashboard-template/tests",
+	"poetry":true
+}

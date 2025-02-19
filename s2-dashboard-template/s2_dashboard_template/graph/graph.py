@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from s2_dashboard_template.db import database
 import os
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(".env")
 env = os.environ.get('ENV')
 
 connection_url = database.getConnectionString(env)

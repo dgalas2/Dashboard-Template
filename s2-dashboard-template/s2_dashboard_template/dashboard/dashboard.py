@@ -2,7 +2,7 @@ from dash import Dash, dcc, html
 import os
 from s2_dashboard_template.graph.graph import getFigure
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(".env")
 env = os.environ.get('ENV')
 if env == None:
 	env = ""

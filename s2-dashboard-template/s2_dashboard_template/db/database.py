@@ -2,7 +2,7 @@ import singlestoredb as s2
 import os
 from dotenv import load_dotenv
 from s2_dashboard_template.db import singleton
-load_dotenv()
+load_dotenv(".env")
 
 def getEnvName(env):
 	if env=="" or env==None:

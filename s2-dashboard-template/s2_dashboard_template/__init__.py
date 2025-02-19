@@ -7,7 +7,7 @@ from singlestoredb.apps import run_dashboard_app
 # if you do not want to use different db for different env, just set env = "",
 # OR do not set variable ENV in .env file
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(".env")
 env = os.environ.get('ENV')
 connection_url = database.getConnectionString(env)
 

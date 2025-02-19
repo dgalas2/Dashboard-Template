@@ -1,8 +1,14 @@
 import random
 from datetime import datetime, timedelta
 import plotly.graph_objects as go
+from s2_dashboard_template.db import database
+import os
 from dotenv import load_dotenv
 load_dotenv()
+env = os.environ.get('ENV')
+
+connection_url = database.getConnectionString(env)
+db = database.DB(connection_url)	
 
 def getFigure():
 	start_date = datetime(2023, 1, 1)

@@ -3,7 +3,7 @@
   requires = ["poetry-core"]
 
 [project]
-  dependencies = ["singlestoredb (>=1.11.0,<2.0.0)","python-dotenv (>=1.0.1,<2.0.0)", "dash (>=2.18.2,<3.0.0)", "psutil (>=7.0.0,<8.0.0)"]
+  dependencies = ["singlestoredb @ git+https://github.com/dgalas2/singlestoredb-python.git@users/dgalas2/local-development-apps","python-dotenv (>=1.0.1,<2.0.0)", "dash (>=2.18.2,<3.0.0)", "psutil (>=7.0.0,<8.0.0)"]
   description = ""
   name = "s2-dashboard-template"
   requires-python = ">=3.9"

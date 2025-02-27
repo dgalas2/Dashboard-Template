@@ -38,7 +38,7 @@ s2-dashboard-template
 ## Setting up project
 1. Go to project folder
 ```
-cd ./s2_dashboard_template
+cd ./s2-dashboard-template
 ```
 2. Install dependencies using poetry
 ```

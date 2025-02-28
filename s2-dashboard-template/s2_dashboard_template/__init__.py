@@ -9,11 +9,13 @@ from singlestoredb.apps import run_dashboard_app
 from dotenv import load_dotenv
 load_dotenv(".env")
 env = os.environ.get('ENV')
-connection_url = database.getConnectionString(env)
+
+if env!='SINGLESTOREDB_APP' and env!=None:
+	connection_url = database.getConnectionString(env)
 
 # only one DB connection string can exist in OS at one time. TODO: change it such that we can use multiple, thus being able to run multiple projects together on local
-os.environ["SINGLESTOREDB_URL"] = connection_url
-os.environ["DATABASE_URL"] = connection_url
+	os.environ["SINGLESTOREDB_URL"] = connection_url
+	os.environ["DATABASE_URL"] = connection_url
 
 
 # db = database.DB(connection_url)	

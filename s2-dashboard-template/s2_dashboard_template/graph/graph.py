@@ -7,9 +7,6 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 env = os.environ.get('ENV')
 
-connection_url = database.getConnectionString(env)
-db = database.DB(connection_url)	
-
 def getFigure():
 	start_date = datetime(2023, 1, 1)
 	dates = [start_date + timedelta(days=i) for i in range(100)]

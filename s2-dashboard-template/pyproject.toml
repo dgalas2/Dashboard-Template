@@ -9,5 +9,4 @@
   requires-python = ">=3.9"
   version = "1.0.0"
   [project.scripts]
-    local-dev = "s2_dashboard_template:main"
-    nova = "s2_dashboard_template:run_app"
+    my-app = "s2_dashboard_template:run_app"

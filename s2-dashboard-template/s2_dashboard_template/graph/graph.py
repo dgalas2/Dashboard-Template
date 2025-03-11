@@ -8,7 +8,7 @@ load_dotenv(".env")
 env = os.environ.get('ENV')
 
 connection_url = database.getConnectionString(env)
-db = database.DB(connection_url)	
+# db = database.DB(connection_url)	
 
 def getFigure():
 	start_date = datetime(2023, 1, 1)

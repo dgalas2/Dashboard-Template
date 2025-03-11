@@ -20,18 +20,11 @@ if env!='SINGLESTOREDB_APP' and env!=None:
 
 # db = database.DB(connection_url)	
 
-# add all setup code that will be used by the app in this function as this will be called on the platform
-async def run_app():
-	dashboard = getDashboardApp()
-	await run_dashboard_app(dashboard)
-
-
-# only add code that is required for local. It will not be run on platform
 def main():
 	
 	print('This is main')
-	
-	asyncio.run(run_app())
+	dashboard = getDashboardApp()
+	asyncio.run(run_dashboard_app(dashboard))
 
 if __name__ == "__main__":
 	main()

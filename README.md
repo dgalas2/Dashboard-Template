@@ -45,9 +45,13 @@ cd ./s2-dashboard-template
 poetry install
 ```
 3. Run poetry script to start up project
+   A ```local-dev``` script has been created for running the app locally. It refers to the ```main()``` in s2_dashboard_template.
+   
 ```
 poetry run my-app
 ```
+
+Anything that is to be run on the platform, should be added to ```run_app```. This will be the function called on the platform.
 
 ## S2Config File
 The configuration file is necessary for Helios platform to understand how to run yur project.
@@ -109,5 +113,6 @@ The convention for naming app and DB specific variables i.e.
 6. `DB_PASSWORD`
 6. `DML_HOST`
 7. `DML_PORT`
+
 
 should be `<ENV NAME>_<VARIABLE_NAME>`. 

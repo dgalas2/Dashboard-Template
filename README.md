@@ -114,3 +114,7 @@ The convention for naming app and DB specific variables i.e.
 
 
 should be `<ENV NAME>_<VARIABLE_NAME>`. 
+
+## Dockerfile
+An example dockerfile has been provided in this project. This can be used to deploy a project on Nova. You can customize this file how you see fit.
+Each Dockerfile needs to EXPOSE 9010 port, since Nova uses that to serve the CodeService.
